@@ -1,0 +1,8 @@
+langchain
+langchain-google-genai
+langchain-community
+tavily-python
+beautifulsoup4
+requests
+python-dotenv
+trafilatura
