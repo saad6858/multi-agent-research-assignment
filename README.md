@@ -1,4 +1,4 @@
-```markdown
+
 # Multi-Agent Research System (Gemini)
 
 Multi-agent research pipeline built during the Bano Qabil Agentic AI program (Batch BQL6-LR).
@@ -49,7 +49,6 @@ This project implements a multi-agent research system using Gemini Free Tier. Th
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-```
 
 3. Create your environment file:
 
