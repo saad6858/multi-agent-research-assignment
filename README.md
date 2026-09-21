@@ -1,4 +1,3 @@
-
 # Multi-Agent Research System (Gemini)
 
 Multi-agent research pipeline built during the Bano Qabil Agentic AI program (Batch BQL6-LR).
@@ -80,4 +79,3 @@ python main.py
 ## Notes
 
 This implementation is designed for Gemini Free Tier. Short delays are added between major steps to respect rate limits. The focus is on clear agent roles, tool usage, and an end-to-end research pipeline.
-```
