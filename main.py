@@ -1,19 +1,14 @@
 """
 main.py
 -------
-This is the entry point of the multi-agent research system.
-
-It runs the four steps in sequence:
-1. Search Agent finds information
-2. Reader Agent digs deeper into useful pages
-3. Writer creates the report
-4. Critic reviews the report
+Entry point of the multi-agent research system (Gemini Free Tier version).
 """
 
 import os
+import time
 from dotenv import load_dotenv
 
-# Load the API keys from the .env file into environment variables
+# Load API keys from .env file
 load_dotenv()
 
 from agents import (
@@ -24,9 +19,11 @@ from agents import (
 )
 
 
-import time
-
 def run_research_pipeline(topic: str):
+    """
+    Full multi-agent research pipeline with delays for free-tier rate limits.
+    """
+
     print("\n" + "="*60)
     print("STEP 1 — Search Agent is working...")
     print("="*60)
@@ -93,3 +90,8 @@ def run_research_pipeline(topic: str):
     print("\n" + "="*60)
     print("Pipeline finished successfully.")
     print("="*60)
+
+
+if __name__ == "__main__":
+    topic = "The impact of AI on the job market in 2026"
+    run_research_pipeline(topic)
